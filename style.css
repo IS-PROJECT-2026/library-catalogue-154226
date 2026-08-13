@@ -31,3 +31,11 @@ body { font-family: 'Segoe UI', sans-serif; background: #f9f6f0; color: #2d2d2d;
   font-weight: 600;
 }
 .btn-primary:hover { background: #c9a55a; }
+
+footer {
+  background: #1a1a2e;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+}
