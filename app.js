@@ -37,3 +37,26 @@ function getFiltered() {
 
 document.getElementById('searchInput').addEventListener('input', () => renderBooks(getFiltered()));
 document.getElementById('genreFilter').addEventListener('change', () => renderBooks(getFiltered()));
+
+function openModal(id) {
+  const book = books.find(b => b.id === id);
+  document.getElementById('modalContent').innerHTML = `
+    <img src="${book.cover}" alt="${book.title}" onerror="this.src='https://via.placeholder.com/120x180?text=No+Cover'" />
+    <div class="modal-info">
+      <h2>${book.title}</h2>
+      <p><strong>Author:</strong> ${book.author}</p>
+      <p><strong>Genre:</strong> ${book.genre}</p>
+      <p><strong>Year:</strong> ${book.year}</p>
+      <p class="description">${book.description}</p>
+    </div>
+  `;
+  document.getElementById('modalOverlay').classList.add('active');
+}
+
+document.getElementById('modalClose').addEventListener('click', () => {
+  document.getElementById('modalOverlay').classList.remove('active');
+});
+document.getElementById('modalOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('modalOverlay'))
+    document.getElementById('modalOverlay').classList.remove('active');
+});
