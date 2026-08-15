@@ -79,3 +79,9 @@ footer {
   margin-top: 0.4rem;
   font-weight: 600;
 }
+
+.controls select:focus, .controls input:focus {
+  outline: 2px solid #e0b87a;
+  border-color: #e0b87a;
+}
+#no-results { text-align: center; padding: 3rem; color: #999; font-size: 1.1rem; }
