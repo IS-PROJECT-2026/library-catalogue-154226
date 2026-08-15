@@ -1,0 +1,10 @@
+const books = [
+  { id: 1, title: "Things Fall Apart", author: "Chinua Achebe", genre: "Fiction", year: 1958, cover: "https://covers.openlibrary.org/b/id/8739161-M.jpg", description: "A story of the Igbo community in pre-colonial Nigeria and the arrival of European missionaries." },
+  { id: 2, title: "Atomic Habits", author: "James Clear", genre: "Self-Help", year: 2018, cover: "https://covers.openlibrary.org/b/id/10521270-M.jpg", description: "Tiny changes, remarkable results — a guide to building good habits and breaking bad ones." },
+  { id: 3, title: "A Brief History of Time", author: "Stephen Hawking", genre: "Science", year: 1988, cover: "https://covers.openlibrary.org/b/id/8406786-M.jpg", description: "An exploration of cosmology, black holes, and the nature of time for general readers." },
+  { id: 4, title: "1984", author: "George Orwell", genre: "Fiction", year: 1949, cover: "https://covers.openlibrary.org/b/id/8575708-M.jpg", description: "A dystopian novel about a totalitarian society where Big Brother watches everything." },
+  { id: 5, title: "The Alchemist", author: "Paulo Coelho", genre: "Fiction", year: 1988, cover: "https://covers.openlibrary.org/b/id/8339515-M.jpg", description: "A philosophical novel about a young shepherd's journey to find treasure and purpose." },
+  { id: 6, title: "Educated", author: "Tara Westover", genre: "Memoir", year: 2018, cover: "https://covers.openlibrary.org/b/id/10308323-M.jpg", description: "A memoir about growing up in a survivalist family and the transformative power of education." },
+  { id: 7, title: "Sapiens", author: "Yuval Noah Harari", genre: "History", year: 2011, cover: "https://covers.openlibrary.org/b/id/8339516-M.jpg", description: "A sweeping history of humankind from the Stone Age to the modern era." },
+  { id: 8, title: "The Pragmatic Programmer", author: "Andrew Hunt & David Thomas", genre: "Technology", year: 1999, cover: "https://covers.openlibrary.org/b/id/8406787-M.jpg", description: "Timeless advice for software developers on craftsmanship and career growth." },
+];
