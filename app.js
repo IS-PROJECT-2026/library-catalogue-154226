@@ -24,3 +24,16 @@ function populateGenres() {
 
 renderBooks(books);
 populateGenres();
+
+function getFiltered() {
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const genre = document.getElementById('genreFilter').value;
+  return books.filter(b => {
+    const matchesQuery = b.title.toLowerCase().includes(query) || b.author.toLowerCase().includes(query);
+    const matchesGenre = genre === 'all' || b.genre === genre;
+    return matchesQuery && matchesGenre;
+  });
+}
+
+document.getElementById('searchInput').addEventListener('input', () => renderBooks(getFiltered()));
+document.getElementById('genreFilter').addEventListener('change', () => renderBooks(getFiltered()));
