@@ -24,7 +24,28 @@
     <a href="#catalogue" class="btn-primary">Browse Catalogue</a>
   </div>
 </section>
-  <!-- catalogue -->
+
+  <section id="catalogue" class="catalogue-section">
+  <div class="catalogue-header">
+    <h2>Browse Books</h2>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search by title or author…" />
+      <select id="genreFilter">
+        <option value="all">All Genres</option>
+      </select>
+    </div>
+  </div>
+  <div class="book-grid" id="bookGrid"></div>
+</section>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
   <footer id="about">
   <p>LibraCat &copy; 2026 &mdash; Built by Joshua Adalo&trade;</p>
 </footer>
