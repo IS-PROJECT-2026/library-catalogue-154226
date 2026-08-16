@@ -128,3 +128,10 @@ footer {
   .navbar { flex-direction: column; gap: 0.75rem; text-align: center; }
   .nav-links { flex-direction: column; gap: 0.5rem; }
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.book-card { animation: fadeIn 0.3s ease both; }
+.modal { animation: fadeIn 0.2s ease both; }
